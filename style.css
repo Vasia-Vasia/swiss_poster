@@ -1,0 +1,107 @@
+@font-face {
+    font-family: raleway;
+    src: url("./src/fonts/Raleway-Bold.ttf");
+  }
+  
+  :root {
+    --color-gray: #dfe2d9;
+    --color-dark: #333;
+    --font-style: raleway, sans-serif;
+    --vertical-line-height: 25vh;
+  }
+  
+  body {
+    box-sizing: border-box;
+    width: 715px;
+    margin: 0 auto;
+    padding: 20px 0 calc(var(--vertical-line-height) / 2);
+  
+    color: var(--color-dark);
+    font-family: var(--font-style);
+    line-height: 1.7;
+  
+    background: var(--color-gray);
+  }
+  
+  p {
+    margin: 0;
+  
+    font-weight: bold;
+  }
+  
+  h1 {
+    margin: 0;
+  
+    font-size: 80px;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(5, 85px);
+    grid-row-gap: 40px;
+    grid-column-gap: 55px;
+  
+    justify-content: end;
+  
+    position: relative;
+  }
+  
+  .left-text {
+    grid-column: 1 / span 2;
+  }
+  
+  .right-text {
+    grid-column: 4 / span 2;
+  }
+  
+  .header {
+    grid-column: 1 / span 5;
+  }
+  
+  .line-25 {
+    height: var(--vertical-line-height);
+  }
+  
+  .line-50 {
+    height: calc(var(--vertical-line-height) * 2);
+    width: 85px;
+  
+    opacity: 0.7;
+  
+    position: absolute;
+    left: -70px;
+    bottom: -70px;
+  }
+  
+  .blue-1 {
+    grid-column-start: 1;
+  }
+  
+  .blue-2 {
+    grid-column-start: 2;
+  }
+  
+  .blue-3 {
+    grid-column-start: 3;
+  }
+  
+  .blue-4 {
+    grid-column-start: 4;
+  }
+  
+  .blue-5 {
+    grid-column-start: 5;
+  }
+  
+  .blue {
+    background: #0271a1;
+  }
+  
+  .orange {
+    background: #f37022;
+  }
+  
+  .pink {
+    background: #cd0076;
+  }
+  
